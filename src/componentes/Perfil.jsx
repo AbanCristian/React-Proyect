@@ -2,9 +2,9 @@ import React from 'react'
 
 const Perfil = () => {
   return (
-      <section>
+      <section id='perfil'>
         <div id='seccion-img'>
-          <img src="" alt="" />
+          <img src='' alt="" />
         </div>
    
         <div id='seccion-info'>

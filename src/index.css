@@ -7,18 +7,18 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 206px 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 3fr;
+  grid-template-columns: 206px 1fr; /* Una columna de 206px y una columna flexible */
+  grid-template-rows: 100vh; /* Solo una fila con altura igual al 100% de la ventana */
   grid-template-areas: 
-    'sidebar header header header'
-    'sidebar main main main';
-  height: 100vh;
-  margin-right: 1000px;
+    'sidebar main'; /* Definimos las áreas de la cuadrícula */
 }
-
 /* Div fantas */
-.header-shadow {
-  grid-area: header;
+main {
+  grid-area: main;
+  background-color: rgb(244, 244, 240); /* Color de fondo del área principal */
+  color: black;
+  overflow-y: auto;
+  padding: 20px; /* Añadimos un relleno interno para separar el contenido del borde */
 }
 /* Sidebar */
 #sidebar {
@@ -45,12 +45,13 @@ body {
   cursor: pointer;
 }
 
-#sidebar .sidebar-menu .sidebar-seccion > #sidebar .sidebar-menu .sidebar-seccion .sidebar-link {
+
+#sidebar .sidebar-menu .sidebar-seccion .sidebar-link{
   text-decoration: none;
-  color: #9e9ea4;
+  color: #000000;
 }
-.sidebar-responsive{
-  display: inline !important;
-  position: absolute;
-  z-index: 12 !important;
-}
+
+
+/* style perfil*/
+
+/* end */

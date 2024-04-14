@@ -4,11 +4,9 @@ import React from 'react'
 export const ScHome = () => {
   return (
 
-    <div>
-      <h1>HOME PRINCIPAL </h1>
+    <main>
       
-
-    </div>
+    </main>
   )
 }
 

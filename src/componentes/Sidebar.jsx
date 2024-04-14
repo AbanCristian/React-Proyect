@@ -20,7 +20,7 @@ const Sidebar = () => {
             </li>
 
             <li className="sidebar-seccion">
-              <Link  to="/ventas">
+              <Link className="sidebar-link"   to="/ventas">
                 <BsCart3 className='icon_header'/> Ventas
               </Link>
             </li>
