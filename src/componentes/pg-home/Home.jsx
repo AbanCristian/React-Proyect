@@ -1,14 +1,15 @@
 import React from 'react'
-import BuscarItems from '../BuscarItems'
+// import BuscarItems from '../BuscarItems'
 
-const ScHome = () => {
+export const ScHome = () => {
   return (
 
     <div>
-      HOME PRINCIPAL
-      <BuscarItems/>
+      <h1>HOME PRINCIPAL </h1>
+      
+
     </div>
   )
 }
 
-export default ScHome
+
