@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Perfil from './Perfil';
-import { BsCart3, BsFillGearFill, BsFillGrid3X3GapFill, BsGrid1X2Fill, BsListCheck, BsMenuApp, BsMenuButtonFill } from 'react-icons/bs';
+import { BsCart3, BsFillGearFill, BsFillGrid3X3GapFill, BsListCheck, BsShop, BsMenuButtonFill } from 'react-icons/bs';
 
 
 const Sidebar = () => {
@@ -15,7 +15,7 @@ const Sidebar = () => {
 
             <li className="sidebar-seccion">
               <Link className="sidebar-link" to="/">
-                <BsGrid1X2Fill className='icon_header'/> Inicio
+                <BsShop className='icon_header'/> Inicio
               </Link>
             </li>
 

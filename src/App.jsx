@@ -5,9 +5,8 @@ import ScPerdidas from "./componentes/pg-perdidas/Perdidas"
 import ScInventario from "./componentes/pg-inventario/Inventario"
 import Sidebar from "./componentes/Sidebar"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-{
-  /* The following line can be included in your src/index.js or App.js file */
-}
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ScCategorias from "./componentes/pg-categoria/Categorias"
 
 
 
@@ -25,6 +24,7 @@ function App() {
             <Route path="/perdidas" element={<ScPerdidas/>} />
             <Route path="/inventario" element={<ScInventario/>} />
             <Route path="/configuracion" element={<ScConfiguracion/>} />
+            <Route path="/categorias" element={<ScCategorias/>} />
           </Routes>
     
       </BrowserRouter>      

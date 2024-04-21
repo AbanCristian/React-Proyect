@@ -3,7 +3,7 @@ import React from 'react'
 const ScConfiguracion = () => {
   return (
     <div>
-      SECCION DE CONFIGURACION
+      pendiente acoplar el estilo que debera llevar
     </div>
   )
 }

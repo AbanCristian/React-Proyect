@@ -1,0 +1,19 @@
+.productos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos ul {
+    display: flex; /* Cambiamos a flexbox para permitir el envolvimiento */
+    flex-wrap: wrap; /* Permitimos que los elementos se envuelvan a la siguiente fila */
+    gap: 1rem;
+}
+
+.productos ul li {
+    width: 200px; /* Ancho fijo para cada elemento */
+    height: 100px; /* Altura fija para cada elemento (solo para propósitos de demostración) */
+    background-color: lightblue; /* Color de fondo para cada elemento (solo para propósitos de demostración) */
+    margin-bottom: 1rem; /* Margen inferior para separar los elementos */
+}

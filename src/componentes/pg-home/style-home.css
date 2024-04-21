@@ -1,0 +1,19 @@
+.container-home{
+    display: grid; /* Utilizamos display: grid; para el contenedor */
+    grid-template-columns: 1fr 1fr; /* Dividimos el contenedor en dos columnas */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.seccion-1{
+    /* background-color: #ec9191; */
+    overflow-y: auto;
+    margin: auto;
+}
+
+
+
+.seccion-2{
+    /* background-color: #a9f068; */
+    position: sticky; /* Hace que la sección del formulario se mantenga fija */
+    top: 0;
+}

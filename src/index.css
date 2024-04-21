@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0; /* Eliminar todo el relleno */
+  padding: 0; 
   background-color: rgb(244, 244, 240);
   color: black;
 }
@@ -15,7 +15,6 @@ body {
 /* Div fantas */
 main {
   grid-area: main;
-  background-color: rgb(244, 244, 240); /* Color de fondo del área principal */
   color: black;
   overflow-y: auto;
   padding: 20px; /* Añadimos un relleno interno para separar el contenido del borde */
@@ -28,6 +27,8 @@ main {
   overflow-y: auto;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+  border-top-right-radius: 7px; /* Borde redondeado en la esquina superior derecha */
+  border-bottom-right-radius: 7px; /* Borde redondeado en la esquina inferior derecha */
 }
 
 #sidebar .sidebar-menu {
@@ -49,6 +50,15 @@ main {
 #sidebar .sidebar-menu .sidebar-seccion .sidebar-link{
   text-decoration: none;
   color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 0.5fr; /* Cambiar a una sola columna en dispositivos más pequeños */
+    grid-template-areas: 
+      'sidebar'
+      'main'; /* Definir nuevas áreas de cuadrícula para dispositivos más pequeños */
+  }
 }
 
 
