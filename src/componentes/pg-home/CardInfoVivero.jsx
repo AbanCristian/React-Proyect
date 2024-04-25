@@ -19,7 +19,7 @@ const CardInfoVivero = () => {
   
 
  
-  console.log(vivero.nombre);
+  
   return (
     <section className='container'>
         <Card style={{ width: '15rem' }}>

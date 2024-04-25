@@ -1,10 +1,22 @@
 
 import React from 'react'
-import { BsCartPlusFill } from "react-icons/bs";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
+import { deleteProductoById } from '../peticiones/Producto/infoProducto';
+
 
 const CardProducto = ({producto}) => {
+
+  const handleEliminar = (id) => {
+      const confirmar = window.confirm('¿Desea eliminar el producto?');
+      if (confirmar) {
+          deleteProductoById({id});
+      }else{
+        console.log('cancelado');
+      }
+  }
+
 
   return (
     <div>
@@ -16,8 +28,13 @@ const CardProducto = ({producto}) => {
                   Existencia: {producto.existencia}
                   <br />
                   Precio : ${producto.precio}
+                  <br />
+                  <b>{producto.existencia >= 1 ? 'Disponible' : 'Agotado'}</b>
+
                 </Card.Text>
-                <Button variant="primary"> <BsCartPlusFill/> </Button>
+                
+                <Button variant="info"><Link to={`/edit/${producto.id}`}> Editar  </Link> </Button> {' '}
+                <Button variant="danger" onClick={e => handleEliminar(producto.id)}> Eliminar</Button>
               </Card.Body>
         </Card>
     </div>

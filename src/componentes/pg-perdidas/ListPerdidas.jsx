@@ -1,7 +1,6 @@
 import React from 'react'
 import ItemPerdida from './ItemPerdida'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+
 
 const ListPerdidas = ( {perdidas} ) => {
 

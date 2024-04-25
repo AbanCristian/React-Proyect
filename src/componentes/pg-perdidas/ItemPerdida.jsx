@@ -6,9 +6,11 @@ const ItemPerdida = ({data}) => {
     <div>
         <Card>
             <Card.Body>
-                <Card.Title>{data.fecha}</Card.Title>
+                <Card.Title>{data.nombreProducto}</Card.Title>
                 <Card.Text>
-                no se que pones
+                  {data.descripcion}
+                  <br />
+                  {data.cantidad}
                 </Card.Text>
                 <Button variant="primary">ver detalle</Button>
             </Card.Body>

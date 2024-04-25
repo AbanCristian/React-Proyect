@@ -3,7 +3,7 @@ import React from 'react'
 import ListProductos from '../ListProductos'
 import './style-inventario.css'
 import FormAddProducto from '../Formularios/productos/FormAddProducto'
-import { getVivero } from '../../peticiones/Vivero/getVivero'
+
 
 
 const ScInventario = () => {
@@ -14,6 +14,7 @@ const ScInventario = () => {
 
       <div className='seccion-1'>
           <h2>Lista de productos</h2>
+          
           <ListProductos/>
       </div>
 

@@ -8,11 +8,10 @@ const ListPerdidasContainer = () => {
 
     useEffect(() => {
         getVivero().then((res) => {
-            setPerdidas(res.perdidas);
+            setPerdidas(res.detallePerdidas);
         })
     }, [])
 
-    console.log(perdidas);
 
   return (
     <div>

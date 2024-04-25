@@ -16,9 +16,11 @@ const ListProductos = () => {
             setListaProductos(res.productos)
         })
     },[])
+    
   return (
 
             <section className='productos'>
+                
                 <ul>
                     {
                         listaProductos.map(producto => (

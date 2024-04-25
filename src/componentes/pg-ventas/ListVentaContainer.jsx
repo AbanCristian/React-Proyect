@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import { getVivero } from '../../peticiones/Vivero/getVivero';
+import Button from 'react-bootstrap/Button';
 
 const ListVentaContainer = () => {
 
@@ -8,10 +9,12 @@ const ListVentaContainer = () => {
 
     useEffect( () => {
         getVivero().then( (res ) => {
-            setVenta(res.ordenes)
+            setVenta(res.detalleOrdenes)
         })
     }, [])
     
+
+
     // const separaFecha = () =>{
         
     //     console.log(venta.fecha)
@@ -23,13 +26,15 @@ const ListVentaContainer = () => {
 
 
   return (
-    <section>
-        <Table striped bordered hover>
+    <section style={{width:'100%'}}>
+        <h3> Lista de ventas</h3>
+        <Table striped bordered hover >
             <thead>
 
                 <tr>
-                <th>#</th>
-                <th>Fecha de la venta</th>
+                    <th>#</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
                 </tr>
 
             </thead>
@@ -38,7 +43,12 @@ const ListVentaContainer = () => {
                     venta.map ( venta => (
                         <tr key={venta.id}>
                             <td>{venta.id}</td>
-                            <td>{venta.fecha}</td>
+                            <td>{venta.nombreProducto}</td>
+                            <td>{venta.cantidad}</td>
+                            <td>
+                            <Button variant="info">Ver más</Button>{' '}
+                            <Button variant="danger">eliminar</Button>{' '}
+                            </td>
                         </tr>
                     ))
                 }
